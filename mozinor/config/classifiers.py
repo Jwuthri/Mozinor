@@ -19,7 +19,7 @@ Fast_Classifiers = {
         'min_samples_leaf': min_samples_leaf,
         "show": ExtraTreesClassifier
     },
-    "LogisticRegression": {S
+    "LogisticRegression": {
         "import": "sklearn.linear_model",
         "penalty": penalty,
         "C": penalty_factor,
@@ -79,7 +79,7 @@ Classifiers = {
     },
     # XGBoost
     'XGBClassifier': {
-        "import": "xgboost"
+        "import": "xgboost",
         'n_estimators': n_estimators,
         'max_depth': max_depth,
         'learning_rate': learning_rate,

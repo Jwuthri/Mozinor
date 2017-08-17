@@ -87,6 +87,8 @@ from sklearn.naive_bayes import BernoulliNB, GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neighbors import KNeighborsRegressor
 
+from xgboost import XGBRegressor, XGBClassifier
+
 from vecstack import stacking
 
 # Read the csv file

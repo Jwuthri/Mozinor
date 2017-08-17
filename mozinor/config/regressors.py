@@ -85,7 +85,7 @@ Regressors = {
     },
     # XGBoost
     'XGBRegressor': {
-        "import": "xgboost"
+        "import": "xgboost",
         'n_estimators': n_estimators,
         'max_depth': max_depth,
         'learning_rate': learning_rate,

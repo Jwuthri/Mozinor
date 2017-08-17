@@ -8,7 +8,7 @@ import os
 import time
 import logging
 
-from mozinor.preprocess.logs import LogFile
+from mozinor.preprocess.loggs import LogFile
 
 
 DEBUG = True
