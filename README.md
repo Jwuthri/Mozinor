@@ -19,10 +19,10 @@ $ python setup.py
 
 | Plugin | URL |
 | ------ | ------ |
-| sklearn | [https://github.com/scikit-learn/scikit-learn] |
-| pydotplus | [https://pypi.python.org/pypi/pydotplus] |
-| tqdm | [https://pypi.python.org/pypi/tqdm] |
-| vecstack | [https://github.com/vecxoz/vecstack] |
+| sklearn | https://github.com/scikit-learn/scikit-learn |
+| pydotplus | https://pypi.python.org/pypi/pydotplus |
+| tqdm | https://pypi.python.org/pypi/tqdm |
+| vecstack | https://github.com/vecxoz/vecstack |
 
 ### Notebook
 
