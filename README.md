@@ -35,8 +35,9 @@ $ python setup.py
 
 ### Todos
 
- - Write MORE Tests
- - Add Night Mode
+ - Write Tests
+ - Make pip install
+ _ ...
 
 License
 ----
