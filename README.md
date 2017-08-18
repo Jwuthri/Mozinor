@@ -26,23 +26,27 @@ $ python setup.py
 | tqdm | [https://pypi.python.org/pypi/tqdm] |
 | vecstack | [https://github.com/vecxoz/vecstack] |
 
-### Run
+### Notebook
 
 > regression:
   https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Reg.ipynb
 > classification:
   https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Class.ipynb
 
+### Run
 
 ```python
-from tpot import TPOTClassifier
-from sklearn.datasets import load_digits
-from sklearn.model_selection import train_test_split
 from mozinor.baboulinet import Baboulinet
 
 cls = Baboulinet(filepath="toto.csv", y_col="predict", regression=False)
 res = cls.babouline()
 ```
+Build the generate code for the best model, and best stack model:
+
+```python
+cls.bestModelScript()
+cls.bestStackModelScript()
+``
 
 ### Todos
 
