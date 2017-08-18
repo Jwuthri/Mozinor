@@ -28,8 +28,10 @@ $ python setup.py
 
 ### Run
 
-> For regression: https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Reg.ipynb
-> For classification: https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Class.ipynb
+> For regression:
+  https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Reg.ipynb
+> For classification:
+  https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Class.ipynb
 
 ### Todos
 
