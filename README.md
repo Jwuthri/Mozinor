@@ -46,7 +46,7 @@ Build the generate code for the best model, and best stack model:
 ```python
 cls.bestModelScript()
 cls.bestStackModelScript()
-``
+```
 
 ### Todos
 
