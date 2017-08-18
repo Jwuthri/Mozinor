@@ -37,7 +37,7 @@ $ python setup.py
 
  - Write Tests
  - Make pip install
- _ ...
+ - ...
 
 License
 ----
