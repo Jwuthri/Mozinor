@@ -24,6 +24,10 @@ $ python setup.py
 | tqdm | https://pypi.python.org/pypi/tqdm |
 | vecstack | https://github.com/vecxoz/vecstack |
 
+### How it works ?
+
+Work in progress....
+
 ### Notebook
 
 > regression:
