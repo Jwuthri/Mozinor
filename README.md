@@ -41,6 +41,19 @@ from mozinor.baboulinet import Baboulinet
 cls = Baboulinet(filepath="toto.csv", y_col="predict", regression=False)
 res = cls.babouline()
 ```
+Show best model, and best stack model:
+```python
+res.best_model
+res.best_stack_models
+```
+You got:
+```python
+  Fit1stLevelEstimator    [(ExtraTreeClassifier(class_weight=None, crite...
+  Fit2ndLevelEstimator    DecisionTreeClassifier(class_weight=None, crit...
+  Score                                                              0.8736
+  Degree                                                                  1
+  Name: 0, dtype: object
+```
 Build the generate code for the best model, and best stack model:
 
 ```python
