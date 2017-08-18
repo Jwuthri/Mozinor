@@ -51,25 +51,18 @@ y_test = np.array(y_test.ix[:,0])
 y_train = np.array(y_train.ix[:,0])
 
 # define lmodels
-lmodels = [ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='gini',
-           max_depth=None, max_features=0.7, max_leaf_nodes=None,
+lmodels = [ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='entropy',
+           max_depth=None, max_features=0.6, max_leaf_nodes=None,
            min_impurity_split=1e-07, min_samples_leaf=1,
-           min_samples_split=10, min_weight_fraction_leaf=0.0,
+           min_samples_split=4, min_weight_fraction_leaf=0.0,
            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
            verbose=0, warm_start=False), XGBClassifier(base_score=0.5, colsample_bylevel=1, colsample_bytree=1,
-       gamma=0, learning_rate=0.1, max_delta_step=0, max_depth=10,
-       min_child_weight=4, missing=None, n_estimators=50, nthread=-1,
+       gamma=0, learning_rate=0.5, max_delta_step=0, max_depth=8,
+       min_child_weight=6, missing=None, n_estimators=50, nthread=-1,
        objective='multi:softprob', reg_alpha=0, reg_lambda=1,
-       scale_pos_weight=1, seed=0, silent=True, subsample=0.4), RandomForestClassifier(bootstrap=True, class_weight=None, criterion='entropy',
-            max_depth=None, max_features=0.4, max_leaf_nodes=None,
-            min_impurity_split=1e-07, min_samples_leaf=3,
-            min_samples_split=3, min_weight_fraction_leaf=0.0,
-            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
-            verbose=0, warm_start=False), DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=6,
-            max_features=None, max_leaf_nodes=None,
-            min_impurity_split=1e-07, min_samples_leaf=6,
-            min_samples_split=4, min_weight_fraction_leaf=0.0,
-            presort=False, random_state=None, splitter='best'), GaussianNB(priors=None), BernoulliNB(alpha=1.0, binarize=0.0, class_prior=None, fit_prior=True)]
+       scale_pos_weight=1, seed=0, silent=True, subsample=0.9), KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=17, p=2,
+           weights='distance')]
 
 # build the stack level 1
 S_train, S_test = stacking(
@@ -79,7 +72,11 @@ S_train, S_test = stacking(
 )
 
 # build model lvel 2
-model = BernoulliNB(alpha=1.0, binarize=0.0, class_prior=None, fit_prior=True)
+model = DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=10,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=2,
+            min_samples_split=5, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')
 
 # Fit the model
 model.fit(S_train, y_train)

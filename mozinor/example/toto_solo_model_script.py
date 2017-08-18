@@ -37,10 +37,10 @@ y_test = np.array(y_test.ix[:,0])
 y_train = np.array(y_train.ix[:,0])
 
 # Build model with good params
-model = ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='gini',
-           max_depth=None, max_features=0.7, max_leaf_nodes=None,
+model = ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='entropy',
+           max_depth=None, max_features=0.6, max_leaf_nodes=None,
            min_impurity_split=1e-07, min_samples_leaf=1,
-           min_samples_split=10, min_weight_fraction_leaf=0.0,
+           min_samples_split=4, min_weight_fraction_leaf=0.0,
            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
            verbose=0, warm_start=False)
 
