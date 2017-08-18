@@ -24,7 +24,7 @@ from mozinor.settings import logger
 
 class EvaluateModels(object):
 
-    def __init__(self, X_train, y_train, X_test, y_test, is_regression, fast=False):
+    def __init__(self, X_train, y_train, X_test, y_test, is_regression, fast=True):
         self.X_train = X_train
         self.y_train = y_train
         self.X_test = X_test

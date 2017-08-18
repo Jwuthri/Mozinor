@@ -177,7 +177,7 @@ class Stacking(object):
         df_best_stack_models["Score"] = best_score
         df_best_stack_models["Degree"] = degree
         self.best_stack_models = df_best_stack_models.iloc[0]
-        self.dict_stack_models = dict_stack_modelséé
+        self.dict_stack_models = dict_stack_models
 
     def run(self):
         d_models_score_degree = self.getModelsScoreDegree()
