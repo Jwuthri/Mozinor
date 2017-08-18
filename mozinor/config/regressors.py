@@ -9,6 +9,14 @@ from mozinor.config.explain import *
 
 
 Fast_Regressors = {
+    "DecisionTreeRegressor": {
+        "import": "sklearn.tree",
+        "criterion": ["mse", "mae"],
+        'max_depth': max_depth,
+        'min_samples_split': min_samples_split,
+        'min_samples_leaf': min_samples_leaf,
+        "show": DecisionTreeRegressor
+    },
     "ExtraTreesRegressor": {
         "import": "sklearn.ensemble",
         'n_estimators': n_estimators,
@@ -32,6 +40,15 @@ Fast_Regressors = {
     "RidgeCV": {
         "import": "sklearn.linear_model",
         "show": RidgeCV
+    },
+    'XGBRegressor': {
+        "import": "xgboost",
+        'n_estimators': n_estimators,
+        'max_depth': max_depth,
+        'learning_rate': learning_rate,
+        'subsample': max_features,
+        'min_child_weight': min_samples_leaf,
+        "show": XGBRegressor
     }
 }
 

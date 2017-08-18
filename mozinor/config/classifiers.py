@@ -19,12 +19,14 @@ Fast_Classifiers = {
         'min_samples_leaf': min_samples_leaf,
         "show": ExtraTreesClassifier
     },
-    "LogisticRegression": {
-        "import": "sklearn.linear_model",
-        "penalty": penalty,
-        "C": penalty_factor,
-        "dual": [False],
-        "show": LogisticRegression
+    'XGBClassifier': {
+        "import": "xgboost",
+        'n_estimators': n_estimators,
+        'max_depth': max_depth,
+        'learning_rate': learning_rate,
+        'subsample': max_features,
+        'min_child_weight': min_samples_leaf,
+        "show": XGBClassifier
     },
     "KNeighborsClassifier": {
         "import": "sklearn.neighbors",
@@ -32,6 +34,14 @@ Fast_Classifiers = {
         "p": [1, 2],
         "n_neighbors": [50],
         "show": KNeighborsClassifier
+    },
+    "DecisionTreeClassifier": {
+        "import": "sklearn.tree",
+        "criterion": criterion,
+        'max_depth': max_depth,
+        'min_samples_split': min_samples_split,
+        'min_samples_leaf': min_samples_leaf,
+        "show": DecisionTreeClassifier
     }
 }
 
