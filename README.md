@@ -33,6 +33,12 @@ $ python setup.py
 > classification:
   https://github.com/Jwuthri/Mozinor/blob/master/mozinor/example/Mozinor%20example%20Class.ipynb
 
+```
+$ from mozinor.baboulinet import Baboulinet
+$ cls = Baboulinet(filepath="toto.csv", y_col="predict", regression=False)
+$ res = cls.babouline()
+```
+
 ### Todos
 
  - Write Tests
