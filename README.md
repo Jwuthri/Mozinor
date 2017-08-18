@@ -52,6 +52,12 @@ You got:
   Score                                                 0.864667
   Degree                                                       1
   Name: 0, dtype: object
+  
+  Fit1stLevelEstimator    [(ExtraTreeClassifier(class_weight=None, crite...
+  Fit2ndLevelEstimator    DecisionTreeClassifier(class_weight=None, crit...
+  Score                                                              0.8736
+  Degree                                                                  1
+  Name: 0, dtype: object
 ```
 Build the generate code for the best model, and best stack model:
 
